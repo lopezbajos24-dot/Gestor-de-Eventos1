@@ -1,9 +1,15 @@
+# Diseño del Sistema - Gestor de Eventos
+
+## 1. Estructura del Sistema (Diagrama de Clases)
+A continuación, se muestra la estructura principal de los elementos que componen la aplicación:
+
+```mermaid
 classDiagram
     class GestorEventos {
-        -List~Evento~ listaEventos
-        -List~Usuario~ listaUsuarios
+        -listaEventos
+        -listaUsuarios
         +iniciarMenu()
-        +crearEvento(id, nombre, fecha, max)
+        +crearEvento(id,nombre,fecha,max)
         +listarEventos()
         +buscarEventoPorNombre(nombre)
         +eliminarEvento(id)
@@ -22,9 +28,9 @@ classDiagram
         -String fecha
         -int maxAsistentes
         -List~Usuario~ asistentes
-        +bool comprobarAforo()
+        +comprobarAforo()
         +anadirAsistente(Usuario)
-        +quitarAsistente(Usuario)
+        +eliminarAsistente(Usuario)
     }
 
     class Usuario {
@@ -33,8 +39,7 @@ classDiagram
         -String email
         +getDetalles()
     }
-
-    %% Relaciones y Cardinalidades
+    %%Relaciones y Cardinalidad 
     GestorEventos "1" --> "*" Evento : gestiona
     GestorEventos "1" --> "*" Usuario : administra
-    Evento "0..*" <--> "0..*" Usuario : inscripciones
+    Evento "*" <--> "*" Usuario : inscripciones
