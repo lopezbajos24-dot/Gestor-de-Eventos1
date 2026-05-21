@@ -22,4 +22,4 @@ A continuación se facilitan los enlaces directos a los archivos de documentaci�
 ## 4. Resumen del trabajo y uso de GitHub
 El desarrollo de este proyecto se ha realizado siguiendo una metodología colaborativa real utilizando GitHub como herramienta de control de versiones. 
 
-Para asegurar la estabilidad del documento final, se prohibió trabajar directamente sobre la rama principal (`main`), aplicando el flujo de trabajo por ramas de características (*Feature Branch Workflow*). Cada integrante desarrolló su documentación en una rama independiente (`feature-requisitos`, `feature-diseno`, `feature-manual` y `feature-planificacion`) y se integraron los cambios mediante Pull Requests supervisadas y revisadas por los compañeros del equipo.
+Para asegurar la estabilidad del documento final, se prohibió trabajar directamente sobre la rama principal (`main`), aplicando el flujo de trabajo por ramas. Cada integrante desarrolló su documentación en una rama independiente (`feature-requisitos`, `feature-diseno`, `feature-manual` y `feature-planificacion`) y se integraron los cambios mediante Pull Requests supervisadas y revisadas por los compañeros del equipo.
